@@ -8,6 +8,14 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var gutil = require('gulp-util');
+var wiredep = require('wiredep').stream;
+var wiredepcss = require('wiredep')().css;
+
+gulp.task('bower', function () {
+  gulp.src('./src/index.html')
+    .pipe(wiredep())
+    .pipe(gulp.dest('./src'));
+});
 
 // Lint Task
 gulp.task('lint', function() {
@@ -20,7 +28,7 @@ gulp.task('lint', function() {
 gulp.task('sass', function() {
     return gulp.src('scss/*.{scss,sass}')
         .pipe(sass())
-        
+
         .pipe(gulp.dest('dist/css'));
 });
 

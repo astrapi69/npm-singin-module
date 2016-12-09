@@ -30,5 +30,8 @@
     "stream-combiner2": "^1.1.1",
     "stringify": "^5.1.0",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "wiredep": "^4.0.0"
   }
 }

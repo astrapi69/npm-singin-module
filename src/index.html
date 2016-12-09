@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+</head>
+
+<p class="h2 text-xs-center text-md-center">Singin form</p> 
+<div class="container-fluid">
+<form data-bind="submit: onSignin">
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="Enter your username"
+        data-bind="value: username">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter your password"
+        data-bind="value: password">
+    </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+<body>
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/knockout/dist/knockout.js"></script>
+    <script src="../bower_components/tether/dist/js/tether.js"></script>
+    <!-- endbower -->
+    <script src="app.js"></script>
+</body>
+
+</html>
