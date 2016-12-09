@@ -1,0 +1,25 @@
+{
+  "name": "npm-signin-module",
+  "description": "simple singin module",
+  "main": "src/index.html",
+  "authors": [
+    "Asterios Raptis"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ko",
+    "gulp",
+    "sass"
+  ],
+  "homepage": "https://github.com/astrapi69/npm-singin-module",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
